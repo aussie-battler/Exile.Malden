@@ -91,12 +91,7 @@ app10_action = {
 execVM "xm8Apps\nice.sqf";
 };
 
-//App 11
-_app11Text = "Crafting Recipes";
-_app11Logo = "xm8Apps\images\BRAma.paa";
-app11_action = {
-execVM "xm8Apps\Apps\BRAmaRecipes\init.sqf";
-};
+
 
 //App 12
 //NOTICE by default the app 12 button is used to go back to the main menu. if you change this you will need to give player a way to return to the main menu
@@ -269,17 +264,7 @@ _App10Button ctrlCommit 0;
 _App10Button ctrlSetEventHandler ["ButtonClick", "call app10_action;"];
 _App10Button ctrlSetStructuredText (parseText (format ["%1",_app10Text]));
 
-_App11Icon = _display ctrlCreate ["RscPicture", 8811];
-_App11Icon ctrlSetPosition [(23.9 - 3) * (0.025), (17.5 - 2) * (0.04), 2.75 * (0.04), 2.75 * (0.04)];
-_App11Icon ctrlSetFade 1;
-_App11Icon ctrlCommit 0;
-_App11Icon ctrlSetText _app11Logo;
-_App11Button = _display ctrlCreate ["RscExileXM8AppButton1x1", 9911];
-_App11Button ctrlSetPosition [(23 - 3) * (0.025), (17 - 2) * (0.04)];
-_App11Button ctrlSetFade 1;
-_App11Button ctrlCommit 0;
-_App11Button ctrlSetEventHandler ["ButtonClick", "call app11_action;"];
-_App11Button ctrlSetStructuredText (parseText (format ["%1", _app11Text]));
+
 
 _App12Icon = _display ctrlCreate ["RscPicture", 8812];
 _App12Icon ctrlSetPosition [(30.9 - 3) * (0.025), (17.5 - 2) * (0.04), 2.75 * (0.04), 2.75 * (0.04)];

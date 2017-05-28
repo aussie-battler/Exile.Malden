@@ -11,7 +11,7 @@
 
  class CfgXM8
  {
- 	extraApps[] = {"ExAd_VG","ExAd_SB"};
+ 	extraApps[] = {"ExAd_VG","ExAd_SB","BRAmaRecipes"};
 
  	class ExAd_VG
  	{
@@ -28,7 +28,15 @@
 			logo = "exile_assets\texture\ui\xm8_app_settings_ca.paa";
 			onLoad = "ExAdClient\XM8\Apps\SB_Settings\onLoad.sqf";
 		};
-
+    class BRAmaRecipes
+    	{
+    		controlID = 107000;
+    		title = "Recipies";
+    		logo = "ExAdClient\XM8\Apps\BRAmaRecipes\BRAma.paa";
+    		config = "ExAdClient\XM8\Apps\BRAmaRecipes\config.sqf";
+    		onLoad = "ExAdClient\XM8\Apps\BRAmaRecipes\onLoad.sqf";
+    		onOpen = "ExAdClient\XM8\Apps\BRAmaRecipes\onOpen.sqf";
+    	};
  };
 
 class CfgClans

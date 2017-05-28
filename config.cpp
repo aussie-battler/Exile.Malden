@@ -5,10 +5,10 @@
  * www.exilemod.com
  * © 2015 Exile Mod Team
  *
- * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. 
+ * This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
- 
+
 
 class CfgClans
 {
@@ -22,7 +22,7 @@ class CfgClans
 	/*
 		A list of all characters allowed in a clan *name*
 
-		NOTE: 
+		NOTE:
 	*/
 	clanNameAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ._-!\\/";
 
@@ -37,7 +37,7 @@ class CfgClans
 		Maximum number of characters on a Marker in a presistent system
 
 		Note: MAX 255!
-		
+
 	*/
 	maximumIconText = 50;
 
@@ -49,7 +49,7 @@ class CfgClans
 	maximumPolys = 10;
 
 
-	/* 
+	/*
 
 		Maximum points in poly
 	*/
@@ -58,7 +58,7 @@ class CfgClans
 class Exile_AbstractCraftingRecipe
 {
 	name = "";
-	pictureItem = ""; 
+	pictureItem = "";
 	returnedItems[] = {};
 	components[] = {}; // Required components
 	tools[] = {}; // Required tools (matches, gas cooker etc.)
@@ -70,7 +70,7 @@ class Exile_AbstractCraftingRecipe
 
 class CfgCraftingRecipes
 {
-	
+
 class BreachingChargeBigMomma: Exile_AbstractCraftingRecipe
 {
 	name = "Breaching Charge (Big Momma)";
@@ -83,7 +83,7 @@ class BreachingChargeBigMomma: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Foolbox"
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_BreachingCharge_Metal"},
 		{1, "Exile_Item_MobilePhone"},
@@ -104,7 +104,7 @@ class BreachingChargeMetal: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Foolbox"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_DuctTape"},
 		{1, "SatchelCharge_Remote_Mag"}
@@ -123,7 +123,7 @@ class BreachingChargeWood: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_Foolbox"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_DuctTape"},
 		{1, "DemoCharge_Remote_Mag"}
@@ -143,7 +143,7 @@ class CookBBQSandwich: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_BBQSandwich"}
 	};
@@ -162,7 +162,7 @@ class CookCatFood: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_CatFood"}
 	};
@@ -181,7 +181,7 @@ class CookChristmasTinner: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ChristmasTinner"}
 	};
@@ -199,7 +199,7 @@ class CookCoffee: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleFreshWater"},
 		{1, "Exile_Item_InstantCoffee"}
@@ -218,7 +218,7 @@ class CookDogFood: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_DogFood"}
 	};
@@ -237,7 +237,7 @@ class CookGloriousKnakworst: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_GloriousKnakworst"}
 	};
@@ -256,7 +256,7 @@ class CookMacasCheese: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MacasCheese"}
 	};
@@ -275,7 +275,7 @@ class CookPlasticBottleDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleDirtyWater"}
 	};
@@ -293,7 +293,7 @@ class CookPlasticBottleSaltWater: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleSaltWater"}
 	};
@@ -312,7 +312,7 @@ class CookSausageGravy: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SausageGravy"}
 	};
@@ -331,7 +331,7 @@ class CookSurstromming: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_Surstromming"}
 	};
@@ -345,7 +345,7 @@ class CraftBandage: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_Bandage"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_ToiletPaper"}
 	};
@@ -356,13 +356,13 @@ class CraftConcreteDoorway: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Doorway";
 	pictureItem = "Exile_Item_ConcreteDoorwayKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteDoorwayKit"},
 		{3, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_Cement"},
 		{3, "Exile_Item_Sand"},
@@ -376,13 +376,13 @@ class CraftConcreteFloor: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Floor";
 	pictureItem = "Exile_Item_ConcreteFloorKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteFloorKit"},
 		{2, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_Cement"},
 		{2, "Exile_Item_Sand"},
@@ -396,13 +396,13 @@ class CraftConcreteFloorPort: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Floor Port";
 	pictureItem = "Exile_Item_ConcreteFloorPortKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteFloorPortKit"},
 		{3, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_Cement"},
 		{3, "Exile_Item_Sand"},
@@ -416,13 +416,13 @@ class CraftConcreteGate: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Gate";
 	pictureItem = "Exile_Item_ConcreteGateKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteGateKit"},
 		{4, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_Cement"},
 		{4, "Exile_Item_Sand"},
@@ -436,13 +436,13 @@ class CraftConcretStairs: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Stairs";
 	pictureItem = "Exile_Item_ConcreteStairsKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteStairsKit"},
 		{1, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_Cement"},
 		{1, "Exile_Item_Sand"},
@@ -456,13 +456,13 @@ class CraftConcretSupport: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Support";
 	pictureItem = "Exile_Item_ConcreteSupportKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteSupportKit"},
 		{1, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_Cement"},
 		{1, "Exile_Item_Sand"},
@@ -476,13 +476,13 @@ class CraftConcreteWall: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Wall";
 	pictureItem = "Exile_Item_ConcreteWallKit";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteWallKit"},
 		{2, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_Cement"},
 		{2, "Exile_Item_Sand"},
@@ -495,11 +495,11 @@ class CraftFirePlace: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Fire Place";
 	pictureItem = "Exile_Item_CampFireKit";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_CampFireKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodLog"}
 	};
@@ -509,11 +509,11 @@ class CraftFloodLight: Exile_AbstractCraftingRecipe
 	name = "Craft Flood Light";
 	pictureItem = "Exile_Item_FloodLightKit";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FloodLightKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MetalPole"},
 		{1, "Exile_Item_LightBulb"},
@@ -526,11 +526,11 @@ class CraftFortificationUpgrade: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_MetalBoard"; //<< CHANGE IT
 	requiresFire = 1;
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FortificationUpgrade"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_MetalBoard"}
@@ -542,15 +542,15 @@ class CraftHBarrier5Kit: Exile_AbstractCraftingRecipe
 	name = "Craft H-barrier (5 Blocks)";
 	pictureItem = "Exile_Item_HBarrier5Kit";
 	requiredInteractionModelGroup = "WorkBench";
-	tools[] = 
+	tools[] =
 	{
 		"Exile_Item_Pliers"
 	};
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_HBarrier5Kit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_SandBagsKit_Long"},
 		{2, "Exile_Item_MetalWire"}
@@ -561,11 +561,11 @@ class CraftMetalBoard: Exile_AbstractCraftingRecipe
 	name = "Craft Metal Board";
 	pictureItem = "Exile_Item_MetalBoard";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_MetalBoard"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_JunkMetal"}
 	};
@@ -576,11 +576,11 @@ class CraftMetalHedgehog: Exile_AbstractCraftingRecipe
 	name = "Craft Metal Hedgehog";
 	pictureItem = "Exile_Item_MetalHedgehogKit";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_MetalHedgehogKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalPole"}
 	};
@@ -591,11 +591,11 @@ class CraftMetalPole: Exile_AbstractCraftingRecipe
 	name = "Craft Metal Pole";
 	pictureItem = "Exile_Item_MetalPole";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_MetalPole"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_JunkMetal"}
 	};
@@ -606,11 +606,11 @@ class CraftPortableGenerator: Exile_AbstractCraftingRecipe
 	name = "Craft Portable Generator";
 	pictureItem = "Exile_Item_PortableGeneratorKit";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_PortableGeneratorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalBoard"},
 		{1, "Exile_Item_FuelCanisterFull"},
@@ -622,17 +622,17 @@ class CraftPortableGenerator: Exile_AbstractCraftingRecipe
 	name = "Craft Razor Wire Kit Kit";
 	pictureItem = "Exile_Item_RazorWireKit_Long";
 	requiredInteractionModelGroup = "WorkBench";
-	tools[] = 
+	tools[] =
 	{
-		"Exile_Item_Grinder", 
+		"Exile_Item_Grinder",
 		"Exile_Item_Pliers",
 		"Exile_Item_Screwdriver"
 	};
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_RazorWireKit_Long"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_MetalPole"},
 		{4, "Exile_Item_MetalWire"},
@@ -644,13 +644,13 @@ class CraftRepairKitConcrete: Exile_AbstractCraftingRecipe
 	name = "Craft Concrete Repair Kit";
 	pictureItem = "Exile_Item_Cement";
 	requiresConcreteMixer = true;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_RepairKitConcrete"},
 		{1, "Exile_Item_WaterCanisterEmpty"},
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_Cement"},
 		{2, "Exile_Item_Sand"},
@@ -664,15 +664,15 @@ class CraftRepairKitMetal: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_RepairKitMetal";
 	requiresFire = 0;
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_RepairKitMetal"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalBoard"}
 	};
-	tools[] = 
+	tools[] =
 	{
 		"Exile_Item_Foolbox",
 		"Exile_Item_Grinder"
@@ -684,15 +684,15 @@ class CraftRepairKitWood: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_RepairKitWood";
 	requiresFire = 0;
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_RepairKitWood"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
-	tools[] = 
+	tools[] =
 	{
 		"Exile_Item_Foolbox"
 	};
@@ -702,11 +702,11 @@ class CraftSandBagsKitCorner: Exile_AbstractCraftingRecipe
 	name = "Craft Sandbags Kit (Corner)";
 	pictureItem = "Exile_Item_SandBagsKit_Corner";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_SandBagsKit_Corner"}
 	};
-	components[] = 
+	components[] =
 	{
 		{3, "Exile_Item_Sand"}
 	};
@@ -716,11 +716,11 @@ class CraftSandBagsKitLong: Exile_AbstractCraftingRecipe
 	name = "Craft Sand Bags Kit (Long)";
 	pictureItem = "Exile_Item_SandBagsKit_Long";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_SandBagsKit_Long"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_Sand"}
 	};
@@ -730,11 +730,11 @@ class CraftStorageCrate: Exile_AbstractCraftingRecipe
 	name = "Craft Storage Crate";
 	pictureItem = "Exile_Item_StorageCrateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_StorageCrateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{5, "Exile_Item_WoodPlank"}
 	};
@@ -745,11 +745,11 @@ class CraftWaterBarrel: Exile_AbstractCraftingRecipe
 	pictureItem = "Exile_Item_WaterBarrelKit";
 	requiredInteractionModelGroup = "WorkBench";
 	requiresFire = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WaterBarrelKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{20, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -759,17 +759,17 @@ class CraftWireFenceKit: Exile_AbstractCraftingRecipe
 	name = "Craft Wire Fence Kit";
 	pictureItem = "Exile_Item_WireFenceKit";
 	requiredInteractionModelGroup = "WorkBench";
-	tools[] = 
+	tools[] =
 	{
-		"Exile_Item_Grinder", 
+		"Exile_Item_Grinder",
 		"Exile_Item_Pliers",
 		"Exile_Item_Screwdriver"
 	};
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WireFenceKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_MetalPole"},
 		{6, "Exile_Item_MetalWire"},
@@ -781,11 +781,11 @@ class CraftWoodDoorWay: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Doorway";
 	pictureItem = "Exile_Item_WoodDoorwayKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodDoorwayKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -811,11 +811,11 @@ class CraftWoodFloor: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Floor";
 	pictureItem = "Exile_Item_WoodFloorKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
@@ -825,11 +825,11 @@ class CraftWoodFloorPort: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Floor Port";
 	pictureItem = "Exile_Item_WoodFloorPortKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorPortKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -853,11 +853,11 @@ class CraftWoodGate: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Gate";
 	pictureItem = "Exile_Item_WoodGateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodGateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{8, "Exile_Item_WoodPlank"}
 	};
@@ -881,11 +881,11 @@ class CraftWoodPlank: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Plank";
 	pictureItem = "Exile_Item_WoodPlank";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodPlank"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodLog"}
 	};
@@ -896,11 +896,11 @@ class CraftWoodStairs: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Stairs";
 	pictureItem = "Exile_Item_WoodStairsKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodStairsKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -910,11 +910,11 @@ class CraftWoodSupport: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Support";
 	pictureItem = "Exile_Item_WoodSupportKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodSupportKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -924,11 +924,11 @@ class CraftWoodWall: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Wall";
 	pictureItem = "Exile_Item_WoodWallKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodPlank"}
 	};
@@ -938,11 +938,11 @@ class CraftWoodWallHalf: Exile_AbstractCraftingRecipe
 	name = "Craft 1/2 Wood Wall";
 	pictureItem = "Exile_Item_WoodWallHalfKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallHalfKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodPlank"}
 	};
@@ -952,11 +952,11 @@ class CraftWoodWindow: Exile_AbstractCraftingRecipe
 	name = "Craft Wood Window";
 	pictureItem = "Exile_Item_WoodWindowKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWindowKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{6, "Exile_Item_WoodPlank"}
 	};
@@ -965,11 +965,11 @@ class CraftWorkBench: Exile_AbstractCraftingRecipe
 {
 	name = "Craft Work Bench";
 	pictureItem = "Exile_Item_WorkBenchKit";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WorkBenchKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{4, "Exile_Item_WoodLog"}
 	};
@@ -987,7 +987,7 @@ class CookAlsatianSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_AlsatianSteak_Raw"}
 	};
@@ -1008,7 +1008,7 @@ class CookCatSharkFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_CatSharkFilet_Raw"}
 	};
@@ -1029,7 +1029,7 @@ class CookChickenFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ChickenFilet_Raw"}
 	};
@@ -1050,7 +1050,7 @@ class CookFinSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_FinSteak_Raw"}
 	};
@@ -1071,7 +1071,7 @@ class CookGoatSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_GoatSteak_Raw"}
 	};
@@ -1092,7 +1092,7 @@ class CookMackerelFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MackerelFilet_Raw"}
 	};
@@ -1113,7 +1113,7 @@ class CookMulletFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_MulletFilet_Raw"}
 	};
@@ -1134,7 +1134,7 @@ class CookOrnateFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_OrnateFilet_Raw"}
 	};
@@ -1155,7 +1155,7 @@ class CookRabbitSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_RabbitSteak_Raw"}
 	};
@@ -1176,7 +1176,7 @@ class CookRoosterFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_RoosterFilet_Raw"}
 	};
@@ -1197,7 +1197,7 @@ class CookSalemaFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SalemaFilet_Raw"}
 	};
@@ -1218,7 +1218,7 @@ class CookSheepSteak: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SheepSteak_Raw"}
 	};
@@ -1239,7 +1239,7 @@ class CookSnakeFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_SnakeFilet_Raw"}
 	};
@@ -1260,7 +1260,7 @@ class CookTunaFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_TunaFilet_Raw"}
 	};
@@ -1281,7 +1281,7 @@ class CookTurtleFilet: Exile_AbstractCraftingRecipe
 	{
 		"Exile_Item_CookingPot"
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_TurtleFilet_Raw"}
 	};
@@ -1292,11 +1292,11 @@ class EmptyFuelCanister: Exile_AbstractCraftingRecipe
 {
 	name = "Empty Fuel Canister";
 	pictureItem = "Exile_Item_FuelCanisterEmpty";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
@@ -1336,7 +1336,7 @@ class FillEmptyPlasticBottleWithDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleDirtyWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -1350,7 +1350,7 @@ class FillEmptyPlasticBottleWithFreshWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_PlasticBottleFreshWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -1360,11 +1360,11 @@ class FillEmptyPlasticBottleWithSaltWater: Exile_AbstractCraftingRecipe
 	name = "Fill Salt Water";
 	pictureItem = "Exile_Item_PlasticBottleSaltWater";
 	requiresOcean = 1;
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_PlasticBottleSaltWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_PlasticBottleEmpty"}
 	};
@@ -1378,7 +1378,7 @@ class FillEmptyWaterCanisterWithDirtyWater: Exile_AbstractCraftingRecipe
 	{
 		{1, "Exile_Item_WaterCanisterDirtyWater"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WaterCanisterEmpty"}
 	};
@@ -1388,11 +1388,11 @@ class FillFuelCanister: Exile_AbstractCraftingRecipe
 	name = "Fill Fuel Canister";
 	pictureItem = "Exile_Item_FuelCanisterFull";
 	requiredInteractionModelGroup = "FuelSource";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_FuelCanisterFull"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_FuelCanisterEmpty"}
 	};
@@ -1402,11 +1402,11 @@ class UpgradeToConcreteDoor: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Concrete Door";
 	pictureItem = "Exile_Item_ConcreteDoorKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteDoorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ConcreteDoorwayKit"},
 		{2, "Exile_Item_MetalPole"},
@@ -1418,11 +1418,11 @@ class UpgradeToConcreteFloorPort: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Concrete Floor Port";
 	pictureItem = "Exile_Item_ConcreteFloorPortKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteFloorPortKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ConcreteFloorKit"},
 		{2, "Exile_Item_MetalPole"},
@@ -1434,11 +1434,11 @@ class UpgradeToConcreteGate: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Concrete Gate";
 	pictureItem = "Exile_Item_ConcreteGateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteGateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ConcreteWallKit"},
 		{2, "Exile_Item_MetalPole"},
@@ -1450,11 +1450,11 @@ class UpgradeToConcreteWindow: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Concrete Window";
 	pictureItem = "Exile_Item_ConcreteWindowKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_ConcreteWindowKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_ConcreteWallKit"},
 		{2, "Exile_Item_MetalPole"},
@@ -1466,11 +1466,11 @@ class UpgradeToWoodDoor: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Door";
 	pictureItem = "Exile_Item_WoodDoorKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodDoorKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodDoorwayKit"},
 		{2, "Exile_Item_WoodPlank"}
@@ -1498,11 +1498,11 @@ class UpgradeToWoodFloorPort: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Floor Port";
 	pictureItem = "Exile_Item_WoodFloorPortKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodFloorPortKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodFloorKit"},
 		{2, "Exile_Item_WoodPlank"}
@@ -1513,11 +1513,11 @@ class UpgradeToWoodGate: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Gate";
 	pictureItem = "Exile_Item_WoodGateKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodGateKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodWallKit"},
 		{4, "Exile_Item_WoodPlank"}
@@ -1528,11 +1528,11 @@ class UpgradeToWoodWall: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Wall";
 	pictureItem = "Exile_Item_WoodWallHalfKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWallKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{2, "Exile_Item_WoodWallHalfKit"}
 	};
@@ -1542,11 +1542,11 @@ class UpgradeToWoodWindow: Exile_AbstractCraftingRecipe
 	name = "Upgrade to Wood Window";
 	pictureItem = "Exile_Item_WoodWindowKit";
 	requiredInteractionModelGroup = "WorkBench";
-	returnedItems[] = 
+	returnedItems[] =
 	{
 		{1, "Exile_Item_WoodWindowKit"}
 	};
-	components[] = 
+	components[] =
 	{
 		{1, "Exile_Item_WoodWallKit"},
 		{2, "Exile_Item_WoodPlank"}
@@ -1567,21 +1567,21 @@ class CfgExileAnimals
 	disableVanillaAnimals = 1;
 
 	/**
-	 * Which animals to spawn. 
+	 * Which animals to spawn.
 	 * Exile automatically spawns a color variation of that animal, if variations exist.
 	 * Each player (client) has a maximum of one animal at a time.
 	 * Exile checks which animal type can spawn in front of the player and then
-	 * picks a random one. 
+	 * picks a random one.
 	 *
 	 * For now it is like this:
-	 * 
+	 *
 	 * - Goats spawn on hill tops, but not in forests
 	 * - Sheep spawn on meadows, but not next to forests and not on hill tops
 	 * - Hens and roosters spawn next to buildings only
 	 *
 	 * => More animal types will follow in upcoming Exile versions, hopefully.
 	 */
-	animalTypes[] = 
+	animalTypes[] =
 	{
 		"Exile_Animal_Rooster_Abstract",
 		"Exile_Animal_Hen_Abstract",
@@ -1597,7 +1597,7 @@ class CfgExileAnimals
 	 * Distance = 150
 	 * Radius = 50
 	 *
-	 * => Minimum Distance from Player = 150 
+	 * => Minimum Distance from Player = 150
 	 * => Maximum Distance from Player = 150 + 50 * 2
 	 */
 	spawnDistance = 150;
@@ -1616,7 +1616,7 @@ class CfgExileAnimals
 
 	/**
 	 * Clients will despawn animals if no player is in this radius around the animal
-	 * This check is ran every 1 minute, so it is pretty unprecise, but performance-friendly. 
+	 * This check is ran every 1 minute, so it is pretty unprecise, but performance-friendly.
 	 */
 	keepAliveRadius = 500;
 
@@ -2066,7 +2066,7 @@ class CfgExileArsenal
 	//class Exile_Item_Cement						{ quality = 1; price = 20; };
 	//class Exile_Item_Sand							{ quality = 1; price = 20; };
 	//class Exile_Item_CarWheel						{ quality = 1; price = 1000; };
-	
+
 	// Added in 1.0.3, but not used
 	//class Exile_Item_SprayCan_Black				{ quality = 2; price = 20; };
 	//class Exile_Item_SprayCan_Red					{ quality = 2; price = 20; };
@@ -2731,7 +2731,7 @@ class CfgExileArsenal
 	class 200Rnd_556x45_Box_Tracer_F                {quality = 1; price = 90; };
 	class 200Rnd_556x45_Box_Tracer_Red_F            {quality = 1; price = 90; };
 	class 10Rnd_9x21_Mag							{quality = 1; price = 10; };
-	
+
 	// Jets DLC items
 	class V_DeckCrew_yellow_F						{ quality = 2; price = 30; };
 	class V_DeckCrew_blue_F							{ quality = 2; price = 30; };
@@ -3234,11 +3234,12 @@ class CfgExileArsenal
 
 
 
-class CfgExileCustomCode 
+class CfgExileCustomCode
 {
+  #include "CfgExileCustomCode.cpp"
 	/*
 		You can overwrite every single file of our code without touching it.
-		To do that, add the function name you want to overwrite plus the 
+		To do that, add the function name you want to overwrite plus the
 		path to your custom file here. If you wonder how this works, have a
 		look at our bootstrap/fn_preInit.sqf function.
 
@@ -3253,7 +3254,7 @@ class CfgExileCustomCode
 };
 class CfgExileEnvironment
 {
-	class Altis 
+	class Altis
 	{
 		class FireFlies
 		{
@@ -3294,7 +3295,7 @@ class CfgExileEnvironment
 			surfaces[] = {};
 		};
 
-		class Radiation 
+		class Radiation
 		{
 			// 1 = enabled, 0 = disabled
 			enable = 1;
@@ -3305,7 +3306,7 @@ class CfgExileEnvironment
 			// Temperature in °C for the time of day, per hour
 			// Add the first index to the last index, so it is 25 indizes!
 			daytimeTemperature[] = {15.93,16.89,18.42,20.40,22.68,25.10,27.48,29.63,31.40,32.66,33.32,33.80,33.80,33.32,32.66,31.40,29.63,27.48,25.10,22.68,20.40,18.42,16.89,15.93,15.93};
-		
+
 			// Temperature change in °C when it is 100% overcast
 			overcast = -2;
 
@@ -3323,7 +3324,7 @@ class CfgExileEnvironment
 		};
 	};
 
-	class Namalsk: Altis 
+	class Namalsk: Altis
 	{
 		class FireFlies: FireFlies
 		{
@@ -3349,7 +3350,7 @@ class CfgExileEnvironment
 		class Radiation: Radiation
 		{
 			enable = 1;
-			contaminatedZones[] = 
+			contaminatedZones[] =
 			{
 				{{3960.14,	8454.75,	152.862}, 	80, 	140},	// Object A1
 				{{4974.70,	6632.82,	4.74293}, 	40, 	150},	// Object A2
@@ -3423,11 +3424,11 @@ class CfgExileHUD
 		SmokeShellRed[] 					= {"RED", 		"SMOKE"};
 		1Rnd_SmokeRed_Grenade_shell[] 		= {"RED", 		"SMOKE"};
 		3Rnd_SmokeRed_Grenade_shell[] 		= {"RED", 		"SMOKE"};
-				
+
 		SmokeShellYellow[] 					= {"YELLOW", 	"SMOKE"};
 		1Rnd_SmokeYellow_Grenade_shell[] 	= {"YELLOW", 	"SMOKE"};
 		3Rnd_SmokeYellow_Grenade_shell[] 	= {"YELLOW", 	"SMOKE"};
-				
+
 		UGL_FlareCIR_F[] 					= {"IR", 		"FLARE"};
 		3Rnd_UGL_FlareCIR_F[] 				= {"IR", 		"FLARE"};
 
@@ -3480,9 +3481,9 @@ class CfgExileLootSettings
 	 * This is a percentage value to determine how many loot
 	 * positions should contain loot when the system spawns loot.
 	 *
-	 * If a building has 20 positions defined, Exile will 
+	 * If a building has 20 positions defined, Exile will
 	 * spawn loot in 10 random positions of them.
-	 * 
+	 *
 	 * This means smaller buildings spawn less loot and larger
 	 * ones spawn more loot.
 	 *
@@ -3491,7 +3492,7 @@ class CfgExileLootSettings
 	maximumPositionCoverage = 30;
 
  	/**
- 	 * Limit the number of loot positions per building. If the 
+ 	 * Limit the number of loot positions per building. If the
  	 * above percentage value exceeds this value, it will be capped.
  	 *
  	 * Example: Coverage is 50%. Building has 60 loot positions defined.
@@ -3501,8 +3502,8 @@ class CfgExileLootSettings
 	maximumNumberOfLootSpotsPerBuilding = 3;
 
 	/**
-	 * Exile spawns a random number of items per loot spot. This 
-	 * is the upper cap for that. So 3 means it could spawn 1, 2 
+	 * Exile spawns a random number of items per loot spot. This
+	 * is the upper cap for that. So 3 means it could spawn 1, 2
 	 * or 3.
 	 */
 	maximumNumberOfItemsPerLootSpot = 2;
@@ -3547,7 +3548,7 @@ class CfgExileMusic
 	Combat[] = {"ExileTrack06","ExileTrack07"};
 	Intro[] = {"ExileTrack02","ExileTrack03"};
 };
-class CfgExileParty 
+class CfgExileParty
 {
 	showESP = 1;
 	allow3DMarkers = 1;
@@ -3555,12 +3556,12 @@ class CfgExileParty
 class CfgExileRussianRoulette
 {
 	/*
-		Minimum amount to join a session of 
+		Minimum amount to join a session of
 		russian roulette
 	*/
 	buyInAmount = 100;
 };
-class CfgFlags 
+class CfgFlags
 {
 	class USA
 	{
@@ -3584,12 +3585,12 @@ class ExileAbstractAction
  */
 class CfgInteractionMenus
 {
-	class Car 
+	class Car
 	{
 		targetType = 2;
 		target = "Car";
 
-		class Actions 
+		class Actions
 		{
 			class ScanLock: ExileAbstractAction
 			{
@@ -3730,7 +3731,7 @@ class CfgInteractionMenus
 
 			class RotateLeft: ExileAbstractAction
 			{
-				title = "Rotate Left";	
+				title = "Rotate Left";
 				condition = "call ExileClient_object_vehicle_interaction_show";
 				action = "[ExileClientInteractionObject,-15] call ExileClient_object_vehicle_rotate";
 			};
@@ -3749,7 +3750,7 @@ class CfgInteractionMenus
 		targetType = 2;
 		target = "Exile_Container_Safe";
 
-		class Actions 
+		class Actions
 		{
 			class ScanLock: ExileAbstractAction
 			{
@@ -3834,7 +3835,7 @@ class CfgInteractionMenus
 			};
 		};
 	};
-	
+
 	class Drawbridge
 	{
 		targetType = 2;
@@ -3848,7 +3849,7 @@ class CfgInteractionMenus
 				condition = "ExileClientInteractionObject call ExileClient_object_construction_openBridgeShow";
 				action = "ExileClientInteractionObject animateSource ['DrawBridge_Source', 0];";
 			};
-			
+
 			class Raise: ExileAbstractAction
 			{
 				title = "Raise";
@@ -3863,7 +3864,7 @@ class CfgInteractionMenus
 		targetType = 2;
 		target = "Exile_Construction_Abstract_Static";
 
-		class Actions 
+		class Actions
 		{
 			class ScanLock: ExileAbstractAction
 			{
@@ -3941,9 +3942,9 @@ class CfgInteractionMenus
 		targetType = 2;
 		target = "Exile_Container_Abstract";
 
-		class Actions 
+		class Actions
 		{
-			class Pack 
+			class Pack
 			{
 				title = "Pack";
 				condition = "!((typeOf ExileClientInteractionObject) isEqualTo 'Exile_Container_SupplyBox')";
@@ -3958,7 +3959,7 @@ class CfgInteractionMenus
 			};
 		};
 	};
-	
+
 	class Flag
 	{
 		targetType = 2;
@@ -3980,7 +3981,7 @@ class CfgInteractionMenus
 				condition = "((ExileClientInteractionObject getvariable ['ExileFlagStolen',1]) isEqualTo 0)";
 				action = "['StealFlag', _this select 0] call ExileClient_action_execute";
 			};
-			
+
 			class RestoreFlag: ExileAbstractAction
 			{
 				title = "Restore Flag";
@@ -3990,7 +3991,7 @@ class CfgInteractionMenus
 		};
 	};
 
-	class Boat 
+	class Boat
 	{
 		targetType = 2;
 		target = "Ship";
@@ -4071,12 +4072,12 @@ class CfgInteractionMenus
 		};
 	};
 
-	class Player 
+	class Player
 	{
 		targetType = 2;
 		target = "Exile_Unit_Player";
 
-		class Actions 
+		class Actions
 		{
 			class Free: ExileAbstractAction
 			{
@@ -4084,7 +4085,7 @@ class CfgInteractionMenus
 				condition = "(alive ExileClientInteractionObject) && (ExileClientInteractionObject getVariable ['ExileIsHandcuffed', false]) && !ExileClientIsHandcuffed";
 				action = "_this call ExileClient_object_handcuffs_free";
 			};
-			
+
 			class Search: ExileAbstractAction
 			{
 				title = "Search Gear";
@@ -4098,7 +4099,7 @@ class CfgInteractionMenus
 				condition = "!(alive ExileClientInteractionObject)";
 				action = "_this call ExileClient_object_player_identifyBody";
 			};
-			
+
 			class HideCorpse: ExileAbstractAction
 			{
 				title = "Hide Body";
@@ -4107,14 +4108,14 @@ class CfgInteractionMenus
 			};
 		};
 	};
-	
+
 	class Animal
 	{
 		targetType = 2;
 		target = "Exile_Animal_Abstract";
 
-		class Actions 
-		{			
+		class Actions
+		{
 			class Gut: ExileAbstractAction
 			{
 				title = "Gut Animal";
@@ -4134,9 +4135,9 @@ class CfgInteractionModels
 	class WaterSource
 	{
 		name = "Water tanks, barrels, coolers or pumps";
-		models[] = 	
+		models[] =
 		{
-			"barrelwater_f", 
+			"barrelwater_f",
 			"barrelwater_grey_f",
 			"waterbarrel_f",
 			"watertank_f",
@@ -4152,7 +4153,7 @@ class CfgInteractionModels
 			"Land_jbad_reservoir",
 			"Land_jbad_teapot",
 			"Land_KBud",
-			
+
 			//Tanoa
 			"watertank_01_f",
 			"watertank_02_f",
@@ -4164,7 +4165,7 @@ class CfgInteractionModels
 	class CleanWaterSource
 	{
 		name = "Water cooler";
-		models[] = 	
+		models[] =
 		{
 			"watercooler"
 		};
@@ -4173,7 +4174,7 @@ class CfgInteractionModels
 	class WorkBench
 	{
 		name = "Work Bench";
-		models[] = 
+		models[] =
 		{
 			"workstand_f.p3d"
 		};
@@ -4182,7 +4183,7 @@ class CfgInteractionModels
 	class ShippingContainerSource
 	{
 		name = "Shipping Containers";
-		models[] = 
+		models[] =
 		{
 			// Arma 3
 			"CargoBox_V1_F",
@@ -4219,7 +4220,7 @@ class CfgInteractionModels
 			"misc_cargo1bo.p3d",
 			"misc_cargo2c.p3d",
 			"misc_cargo1ao.p3d",
-			
+
 			//Tanoa
 			"Land_ContainerLine_01_F",
 			"Land_ContainerLine_02_F",
@@ -4227,7 +4228,7 @@ class CfgInteractionModels
 
 			// Also allow wrecks
 			"wreck_"
-/*			
+/*
 			"wreck_bmp2_f.p3d",
 			"wreck_brdm2_f.p3d",
 			"wreck_car2_f.p3d",
@@ -4252,14 +4253,14 @@ class CfgInteractionModels
 			*/
 
 
-			// TODO: Ask community for CUP/AiA model names	
+			// TODO: Ask community for CUP/AiA model names
 		};
 	};
 
 	class WoodSource
 	{
 		name = "Trees";
-		models[] = 
+		models[] =
 		{
 			" t_",
 			" bo_t_",
@@ -4268,7 +4269,7 @@ class CfgInteractionModels
             " str_",
             " Smrk_",
             " les_",
-            " brg_"			
+            " brg_"
 		};
 	};
 
@@ -4276,7 +4277,7 @@ class CfgInteractionModels
 	class FuelSource
 	{
 		name = "Fuel pumps, stations or barrels";
-		models[] = 
+		models[] =
 		{
 			"fuelstation_feed_f.p3d",
 			"metalbarrel_f.p3d",
@@ -4285,17 +4286,17 @@ class CfgInteractionModels
 			//Tanoa
 			"fuelstation_01_pump_f.p3d",
 			"fuelstation_02_pump_f.p3d"
-		};	
+		};
 	};
 };
-class CfgLocker 
+class CfgLocker
 {
 	numbersOnly = "0123456789";
-	
+
 	maxDeposit = 10000;
 };
 
-class CfgPlayer 
+class CfgPlayer
 {
 	// In minutes ammount of time it takes to go from 100 - 0 if stationary
 	hungerDecay = 90;
@@ -4322,7 +4323,7 @@ class CfgPlayer
 	enableStamina = 0;
 
 	disableMapDrawing = 1;
-	
+
 	// Use the current gradient to affect the players movement when autorunning.
 	// 0 == default exile auto run
 	useGradientAffectedAutoRun = 0;
@@ -4331,8 +4332,8 @@ class CfgSlothMachine
 {
 	spinCost = 100;
 	Jackpot = 10100;
-	
-	chances[] = 
+
+	chances[] =
 	{
 		{85, ""}, 					// 85% = Nothing
 		{95, "Level1"}, 			// 10% = 1pt
@@ -4343,7 +4344,7 @@ class CfgSlothMachine
 		{100, "Jackpot"} 			// 1% = Jackpot
 	};
 
-	class Prizes 
+	class Prizes
 	{
 		class Level1
 		{
@@ -4374,7 +4375,7 @@ class CfgSlothMachine
 			symbol = "\exile_assets\texture\item\Exile_Item_Safe.paa";
 			prize = 200;
 		};
-		
+
 		class Jackpot
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_XmasPresent.paa";
@@ -4385,11 +4386,11 @@ class CfgTerritories
 {
 	// Base Cost / Radius
 	// Level 1 is allways for Pop Tabs, >= 2 for Respect
-	prices[] = 
+	prices[] =
 	{
 		// Purchase Price 		Radius 		Number of Objects
 		{5000,					15,			30 					}, // Level 1
-		{10000,					30,			60 					}, // Level 2 
+		{10000,					30,			60 					}, // Level 2
 		{15000,					45,			90 					}, // Level 3
 		{20000,					60,			120					}, // Level 4
 		{25000,					75,			150					}, // Level 5
@@ -4404,7 +4405,7 @@ class CfgTerritories
 	maximumRadius = 150;
 
 	// The above * 2 plus coverving the 20m you can move while placing things
-	minimumDistanceToOtherTerritories = 325; 
+	minimumDistanceToOtherTerritories = 325;
 
 	// Maximum number of territories a player can own
 	maximumNumberOfTerritoriesPerPlayer = 2;
@@ -5113,7 +5114,7 @@ class CfgTraderCategories
 			"Exile_Item_Raisins",
 			"Exile_Item_Moobar",
 			"Exile_Item_InstantCoffee"
-			
+
 			// Hunted Animals
 			// Note: Adding these to the trader will defeat the purpose of hunting!
 			/*
@@ -5150,7 +5151,7 @@ class CfgTraderCategories
 			*/
 		};
 	};
-	
+
 	class NonVeganFood
 	{
 		name = "Non-Vegan Food";
@@ -5174,7 +5175,7 @@ class CfgTraderCategories
 			"Exile_Item_SnakeFilet_Raw"
 		};
 	};
-	
+
 
 	class Drinks
 	{
@@ -5231,13 +5232,13 @@ class CfgTraderCategories
 			"Laserdesignator_02",
 			"Laserdesignator_03",
 			*/
-			
+
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
 			"ItemRadio",
 			"ItemWatch",
-			"Exile_Item_XM8"			
+			"Exile_Item_XM8"
 		};
 	};
 
@@ -5882,7 +5883,7 @@ class CfgTraders
 	{
 		name = "ARMORY";
 		showWeaponFilter = 1;
-		categories[] = 
+		categories[] =
 		{
 			"PointerAttachments",
 			"BipodAttachments",
@@ -5905,7 +5906,7 @@ class CfgTraders
 	{
 		name = "SPECIAL OPERATIONS";
 		showWeaponFilter = 1; // for noob tubes
-		categories[] = 
+		categories[] =
 		{
 			"Flares",
 			"Smokes",
@@ -5920,10 +5921,10 @@ class CfgTraders
 	 * Uniforms, vests, helmets, backpacks
 	 */
 	class Exile_Trader_Equipment
-	{	
+	{
 		name = "EQUIPMENT";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Headgear",
 			"Glasses",
@@ -5941,7 +5942,7 @@ class CfgTraders
 	{
 		name = "FAST FOOD";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Food",
 			"Drinks",
@@ -5956,7 +5957,7 @@ class CfgTraders
 	{
 		name = "HARDWARE";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Hardware",
 			"Tools"
@@ -5970,7 +5971,7 @@ class CfgTraders
 	{
 		name = "VEHICLE";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Cars",
 			"Trucks"
@@ -5984,21 +5985,21 @@ class CfgTraders
 	{
 		name = "AIRCRAFT";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
-			"Choppers", 
+			"Choppers",
 			"Planes"
 		};
 	};
 
 	/**
 	 * Sells ships and boats
-	 */ 
+	 */
 	class Exile_Trader_Boat
 	{
 		name = "BOAT";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Boats"
 		};
@@ -6008,7 +6009,7 @@ class CfgTraders
 	{
 		name = "DIVERS";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Diving"
 		};
@@ -6016,12 +6017,12 @@ class CfgTraders
 
 	/**
 	 * Sells Community Items
-	 */ 
+	 */
 	class Exile_Trader_CommunityCustoms
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community"
 		};
@@ -6031,7 +6032,7 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community2"
 		};
@@ -6041,7 +6042,7 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community3"
 		};
@@ -6051,7 +6052,7 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community4"
 		};
@@ -6061,7 +6062,7 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community5"
 		};
@@ -6071,7 +6072,7 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community6"
 		};
@@ -6081,7 +6082,7 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community7"
 		};
@@ -6091,7 +6092,7 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community8"
 		};
@@ -6101,7 +6102,7 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community9"
 		};
@@ -6111,24 +6112,24 @@ class CfgTraders
 	{
 		name = "COMMUNITY";
 		showWeaponFilter = 0;
-		categories[] = 
+		categories[] =
 		{
 			"Community10"
 		};
 	};
 };
-class CfgTrading 
+class CfgTrading
 {
 	/*
 	* This factor defines the difference between sales/purchase price of
 	* items and vehicles. It is used if there is no sales price defined
-	* in CfgExileArsenal. 
+	* in CfgExileArsenal.
 	*/
 	sellPriceFactor = 0.5;
-	
+
 	rekeyPriceFactor = 0.1;
 
-	class requiredRespect 
+	class requiredRespect
 	{
 		Level1 = 0;
 		Level2 = 5000;
@@ -6533,7 +6534,7 @@ class CfgVehicleCustoms
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_SUVXL_Abstract
     {
-        skins[] = 
+        skins[] =
         {
             {"Exile_Car_SUVXL_Black", 100, "Black", {"\Exile_psycho_SUV_a3\Data\suv_body_co.paa"}},
             {"Exile_Car_SUVXL_Black", 150, "Blue White", {"\Exile_psycho_SUV_a3\Data\textures\suv_body_bluewhite.paa"}},
@@ -6942,7 +6943,7 @@ class CfgVehicleCustoms
 	};
 };
 
-class CfgVehicleTransport 
+class CfgVehicleTransport
 {
 	class Exile_Container_SupplyBox
 	{
@@ -6951,35 +6952,35 @@ class CfgVehicleTransport
 		class Exile_Car_Van_Abstract
 		{
 			attachPosition[] = {0, -1.1, 0.2};
-			cargoIndizes[] = {2, 3, 4, 5, 6, 7}; 
+			cargoIndizes[] = {2, 3, 4, 5, 6, 7};
 			detachPosition[] = {0, -4.4};
 		};
 
 		class Exile_Car_Offroad_Abstract
 		{
 			attachPosition[] = {0, -1.6, 0.4};
-			cargoIndizes[] = {1, 2, 3, 4}; 
+			cargoIndizes[] = {1, 2, 3, 4};
 			detachPosition[] = {0, -4};
 		};
 
 		class Exile_Car_Zamak_Abstract
 		{
 			attachPosition[] = {0.03, 0.3, 0};
-			cargoIndizes[] = {2, 3, 4, 5, 6, 7}; 
+			cargoIndizes[] = {2, 3, 4, 5, 6, 7};
 			detachPosition[] = {0.03, -4.8};
 		};
 
 		class Exile_Car_HEMMT_Abstract
 		{
 			attachPosition[] = {0.05, -0.1, 0.3};
-			cargoIndizes[] = {1, 2, 8, 9}; 
+			cargoIndizes[] = {1, 2, 8, 9};
 			detachPosition[] = {0.05, -6.1};
 		};
 
 		class Exile_Car_Tempest_Abstract
 		{
 			attachPosition[] = {0.08, -0.85, 0.4};
-			cargoIndizes[] = {1, 6, 7, 9}; 
+			cargoIndizes[] = {1, 6, 7, 9};
 			detachPosition[] = {0.08, -6};
 		};
 	};

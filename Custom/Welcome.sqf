@@ -1,5 +1,5 @@
 createDialog "RscDisplayWelcome";
-
+disableSerialization;
 _display = findDisplay 999999;
 _text1 = _display displayCtrl 1100;
 _buttonSpoiler = _display displayctrl 2400;
@@ -41,7 +41,7 @@ _message = _message + "Sincerely, <a color='#ff9900'>Vincent Van Goat - Founder,
 _text1 ctrlSetStructuredText (parseText _message);
 
 _positionText1 = ctrlPosition _text1;
-_yText1 = _positionText1 select 1; 
+_yText1 = _positionText1 select 1;
 _hText1 = ctrlTextHeight _text1;
 _text1 ctrlSetPosition [_positionText1 select 0, _yText1, _positionText1 select 2, _hText1];
 _text1 ctrlcommit 0;

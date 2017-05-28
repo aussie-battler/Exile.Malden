@@ -1,6 +1,6 @@
 #define true 1
 #define false 0
-
+#include "CHVD\dialog.hpp"
 ///////////////////////////////////////////////////////////////////////////////
 // Server Settings - Modify at will
 ///////////////////////////////////////////////////////////////////////////////
@@ -69,7 +69,15 @@ showHUD[] =
 class CfgFunctions
 {
 	#include "ExAdClient\CfgFunctions.cpp"
+  #include "CHVD\CfgFunctions.hpp"
 };
+class RscTitles
+{
+	#include "VEMFr_client\gui\RscDisplayVEMFrClient.hpp"
+	#include "VEMFr_client\gui\RscDisplayBaseAttack.hpp"
+  #include "ExAdClient\RscTitles.cpp"
+};
+
 #include "config.cpp"
 #include "infiSTAR_AdminMenu.hpp"
 #include "CfgRemoteExec.hpp"

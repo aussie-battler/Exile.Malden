@@ -29,65 +29,54 @@ app1_action = {
 execVM "xm8Apps\apps\InfoPage.sqf";
 };
 
-//App 2
-_app2Text = "Server Rules";
-_app2Logo = "xm8Apps\images\Rules.paa";
-app2_action = {
-execVM "xm8Apps\apps\Rules.sqf";
-};
+
 
 //App 3
-_app3Text = "Spawn Bike";
-_app3Logo = "xm8Apps\images\icon_mmt_ca.paa";
-app3_action = {
+_app2Text = "Spawn Bike";
+_app2Logo = "xm8Apps\images\icon_mmt_ca.paa";
+app2_action = {
 ExecVM "Custom\EnigmaPersonalVehicle\Enigma_SpawnVehicle.sqf";
 };
 
 //App 4
-_app4Text = "Base Locator";
-_app4Logo = "\exile_assets\texture\ui\snap_blue_ca.paa";
-app4_action = {
+_app3Text = "Base Locator";
+_app3Logo = "\exile_assets\texture\ui\snap_blue_ca.paa";
+app3_action = {
 	private ["_position"];
 	_position = getPosATL player;
 	[_position] execVM "xm8Apps\apps\build_here.sqf";
 };
 
 //App 5
-_app5Text = "View Distance";
-_app5Logo = "xm8Apps\images\ViewDistance.paa";
-app5_action = {[] call CHVD_fnc_openDialog;};
+_app4Text = "View Distance";
+_app4Logo = "xm8Apps\images\ViewDistance.paa";
+app4_action = {[] call CHVD_fnc_openDialog;};
 
-//App 6
-_app6Text = "Player Stats";
-_app6Logo = "xm8Apps\images\Statistics.paa";
-app6_action = {
-execVM "xm8Apps\apps\PlayerStats.sqf";
-};
 
 //App 7
-_app7Text = "Sefie";
-_app7Logo = "xm8Apps\Apps\Selfie\selfie.paa";
-app7_action = {
+_app5Text = "Sefie";
+_app5Logo = "xm8Apps\Apps\Selfie\selfie.paa";
+app5_action = {
 execVM "xm8Apps\Apps\Selfie\selfie.sqf";
 };
 
 //App 8
-_app8Text = "Turn Off Ambient Sound";
-_app8Logo = "";
-app8_action = {
+_app6Text = "Turn Off Ambient Sound";
+_app6Logo = "";
+app6_action = {
 execVM "xm8Apps\one.sqf";
 };
 
 //App 9
-_app9Text = "Base Security";
-_app9Logo = "xm8Apps\ExileSecurity\Images\ExileSecurity.paa";
-app9_action = {[] spawn ExileSecurity_Territory};
+_app7Text = "Base Security";
+_app7Logo = "xm8Apps\ExileSecurity\Images\ExileSecurity.paa";
+app7_action = {[] spawn ExileSecurity_Territory};
 
 
 //App 10
-_app10Text = " ";
-_app10Logo = "";
-app10_action = {
+_app8Text = " ";
+_app8Logo = "";
+app8_action = {
 execVM "xm8Apps\nice.sqf";
 };
 
@@ -240,29 +229,7 @@ _App8Button ctrlCommit 0;
 _App8Button ctrlSetEventHandler ["ButtonClick","call app8_action;"];
 _App8Button ctrlSetStructuredText (parseText (format ["%1",_app8Text]));
 
-_App9Icon = _display ctrlCreate ["RscPicture", 889];
-_App9Icon ctrlSetPosition [(9.9 - 3) * (0.025), (17.5 - 2) * (0.04), 2.75 * (0.04), 2.75 * (0.04)];
-_App9Icon ctrlSetFade 1;
-_App9Icon ctrlCommit 0;
-_App9Icon ctrlSetText _app9Logo;
-_App9Button = _display ctrlCreate ["RscExileXM8AppButton1x1", 999];
-_App9Button ctrlSetPosition [(9 - 3) * (0.025), (17 - 2) * (0.04)];
-_App9Button ctrlSetFade 1;
-_App9Button ctrlCommit 0;
-_App9Button ctrlSetEventHandler ["ButtonClick", "call app9_action;"];
-_App9Button ctrlSetStructuredText (parseText (format ["%1",_app9Text]));
 
-_App10Icon = _display ctrlCreate ["RscPicture", 8810];
-_App10Icon ctrlSetPosition [(16.9 - 3) * (0.025), (17.5 - 2) * (0.04), 2.75 * (0.04), 2.75 * (0.04)];
-_App10Icon ctrlSetFade 1;
-_App10Icon ctrlCommit 0;
-_App10Icon ctrlSetText _app10Logo;
-_App10Button = _display ctrlCreate ["RscExileXM8AppButton1x1", 9910];
-_App10Button ctrlSetPosition [(16 - 3) * (0.025), (17 - 2) * (0.04)];
-_App10Button ctrlSetFade 1;
-_App10Button ctrlCommit 0;
-_App10Button ctrlSetEventHandler ["ButtonClick", "call app10_action;"];
-_App10Button ctrlSetStructuredText (parseText (format ["%1",_app10Text]));
 
 
 

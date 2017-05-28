@@ -1,116 +1,63 @@
+
 /*
-Info page script made by Shix http://www.exilemod.com/profile/4566-shix/
-Allow admins to display any info they would like to players
-Made for XM8 Apps http://www.exilemod.com/topic/9040-updated-xm8-apps/
+Copyright ©
+28/09/2016
+GOAT Exile
+All Rights Reserved
+Welcome.sqf
 */
-/////////////////////
-//CONFIG
-////////////////////
-/*
-Set what text you want on each line. I do not suggest going more than 63 characters per line
-these are all common colors found in Exile and can be seen here http://www.exilemod.com/topic/8879-exilemod-colors/
-color key
-1 = Red
-2 = Pink
-3 = Grey
-4 = White
-5 = Dark Blue
-6 = Dark Grey
-7 = Green
-8 = Yellow
-9 = Light Blue
-*/
-_TextColor = 2;
-
-_line1Text = "Welcome to GOAT Exile Tanoa";
-_line2Text = "Custom Mission";
-_line3Text = "Website : http://www.goatexile.eu";
-_line4Text = "TS : 164.132.233.77";
-_line5Text = "Don't Directly Poke Vincent Van Goat if there are other Support People on the TS";
-_line6Text = "This Server Runs off donations!";
-_line7Text = "If you want to support the server come on ts";
-_line8Text = "Server Owner: Vincent Van Goat";
-
-
-/////////////////////
-//CONFIG
-////////////////////
-
 disableSerialization;
-_display = uiNameSpace getVariable ["RscExileXM8", displayNull];
+createDialog "RscDisplayWelcome";
 
-//set XM8 title
-(_display displayCtrl 4004) ctrlSetStructuredText (parseText (format ["<t align='center' font='RobotoMedium'>Info</t>"]));
+_display = findDisplay 999999;
+_text1 = _display displayCtrl 1100;
+_buttonSpoiler = _display displayctrl 2400;
+_textSpoiler = _display displayctrl 1101;
+_text2 = _display displayCtrl 1102;
 
-//Hides all xm8 apps controlls then deletes them for a smooth transition
-_xm8Controlls = [991,881,992,882,993,883,994,884,995,885,996,886,997,887,998,888,999,889,9910,8810,9911,8811,9912,8812];
-{
-    _fade = _display displayCtrl _x;
-    _fade ctrlSetFade 1;
-    _fade ctrlCommit 0.5;
-} forEach _xm8Controlls;
-{
-    ctrlDelete ((findDisplay 24015) displayCtrl _x);
-} forEach _xm8Controlls;
-uiSleep 0.2;
-
-//Created a structured text box
-_StructuredTextBox = _display ctrlCreate ["RscStructuredText", 1120];
-_StructuredTextBox ctrlSetPosition [(7 - 3) * (0.025), (6 - 2) * (0.04),(0.8),(0.54)];
-_StructuredTextBox ctrlCommit 0;
-_StructuredTextBox ctrlSetBackgroundColor [1,1,1,0.05];
-_StructuredTextBox ctrlSetStructuredText parseText (format["<t align='left'>%1<br/>%2<br/>%3<br/>%4<br/>%5<br/>%6<br/>%7<br/>%8<br/>%9<br/>%10<br/>%11<br/>%12<br/>%13</t>",_line1Text,_line2Text,_line3Text,_line4Text,_line5Text,_line6Text,_line7Text,_line8Text,_line9Text,_line10Text,_line11Text,_line12Text,_line13Text]);
-switch (_TextColor) do {
-    case (1): {
-        _StructuredTextBox ctrlSetTextColor [0.886,0.255,0.259,1];
-    };
-    case (2): {
-        _StructuredTextBox ctrlSetTextColor [0.78,0.149,0.318,1];
-    };
-    case (3): {
-        _StructuredTextBox ctrlSetTextColor [0.133,0.145,0.149,1];
-    };
-    case (4): {
-        _StructuredTextBox ctrlSetTextColor [0.984,0.988,0.996,1];
-    };
-    case (5): {
-        _StructuredTextBox ctrlSetTextColor [0.075,0.09,0.106,1];
-    };
-    case (6): {
-        _StructuredTextBox ctrlSetTextColor [0.153,0.153,0.176,1];
-    };
-    case (7): {
-        _StructuredTextBox ctrlSetTextColor [0.039,0.875,0.231,1];
-    };
-    case (8): {
-        _StructuredTextBox ctrlSetTextColor [1,0.706,0.094,1];
-    };
-    case (9): {
-        _StructuredTextBox ctrlSetTextColor [0.247,0.831,0.988,1];
-    };
-};
+_message = "";
+_message = _message + "<t align='center' size='8' shadow='0'></t><br />";
+_message = _message + "<t align='center' size='2' shadow='0'>Welcome to <a color='#ff9900'>GOAT</a> Exile Malden!</t><br />";
+_message = _message + "<t align='center'>______________________________________________________________________________________</t><br /><br />";
+_message = _message + "<t align='center' size='1' shadow='0'><a color='#ff9900'>Discord</a>: http://voice.goatexile.eu</t><br /><br />";
+_message = _message + "<t align='center'>______________________________________________________________________________________</t><br /><br />";
+_message = _message + "<t align='center' size='1.5' shadow='0'><t color='#ff9900'> We have HALO Jump Spawns - If this is your first time playing please click continue or you will hit the ground and die!</t></t><br />";
+_message = _message + "<t align='center'>______________________________________________________________________________________</t><br /><br />";
+_message = _message + "<t align='center' size='1' shadow='0'><t color='#ff9900'>Features:</t><br />";
+_message = _message + "<t color='#ff9900'> Capture Points<br />";
+_message = _message + "<t color='#ff9900'> The ability to mute ambient sounds<br />";
+_message = _message + "<t color='#ff9900'> Missions<br />";
+_message = _message + "<t color='#ff9900'> Tow/Lift<br />";
+_message = _message + "<t color='#ff9900'> Server Events<br />";
+_message = _message + "<t color='#ff9900'> Safezone Anti Theft<br />";
+_message = _message + "<t color='#ff9900'> Vector Building<br />";
+_message = _message + "<t color='#ff9900'> An XM8 Full of interesting Apps<br />";
+_message = _message + "<t color='#ff9900'> Virtual Garage<br />";
+_message = _message + "<t color='#ff9900'> Town Invasions<br />";
+_message = _message + "<t color='#ff9900'> Base Raiding With Grinders and Laptops<br />";
+_message = _message + "<t color='#ff9900'> View Distance Changer<br />";
+_message = _message + "<t color='#ff9900'> A Roaming Trader In Addition To Static Traders<br />";
+_message = _message + "<t color='#ff9900'> Many GUI Improvements to make your time here at GOAT Exile Smoother<br />";
+_message = _message + "<t align='center'>______________________________________________________________________________________</t><br /><br />";
+_message = _message + "<t align='center' size='2' shadow='0'><t color='#ff9900'>Server Rules:</t></t><br />";
+_message = _message + "<t align='center' size='2' shadow='0'><t color='#ff9900'>The Full Server Rules Are At http://www.goatexile.eu</t></t><br />";
+_message = _message + "<t align='center' size='1.5' shadow='0'><t color='#ff0000'>By Clicking Continue you agree you have read the rules, or will read them at the nearest possible opportunity</t></t><br />";
+_message = _message + "<t align='center'>______________________________________________________________________________________</t><br /><br />";
+_message = _message + "- <a color='#ff9900'> We Offer Reserved Slots To Donators, To Donate Hop on the Discord and speak with an admin. </a></t><br /><br />";
+_message = _message + "Sincerely, <a color='#ff9900'>Vincent Van Goat - Founder, Dev and owner of GOAT Exile</a><br /><br />";
 
 
-//Created the go back button and add the button click event handeler to it
-//Note you do need to add all Idds for all the controlls you have created to the _Ctrls array
-_GoBackBtn = _display ctrlCreate ["RscButtonMenu", 1116];
-_GoBackBtn ctrlSetPosition [(32 - 3) * (0.025),(20 - 2) * (0.04),6 * (0.025),1 * (0.04)];
-_GoBackBtn ctrlCommit 0;
-_GoBackBtn ctrlSetText "Go Back";
-_GoBackBtn ctrlSetEventHandler ["ButtonClick", "call fnc_goBack"];
+_text1 ctrlSetStructuredText (parseText _message);
 
-fnc_goBack = {
-  _display = uiNameSpace getVariable ["RscExileXM8", displayNull];
-  _Ctrls = [1120,1119,1112,1114,1116];
-  {
-      _ctrl = (_display displayCtrl _x);
-      _ctrl ctrlSetFade 1;
-      _ctrl ctrlCommit 0.25;
-      ctrlEnable [_x, false];
-  } forEach _Ctrls;
-  execVM "xm8Apps\XM8Apps_Init.sqf";
-  uiSleep 1;
-  {
-    ctrlDelete ((findDisplay 24015) displayCtrl _x);
-  } forEach _Ctrls;
-};
+_positionText1 = ctrlPosition _text1;
+_yText1 = _positionText1 select 1;
+_hText1 = ctrlTextHeight _text1;
+_text1 ctrlSetPosition [_positionText1 select 0, _yText1, _positionText1 select 2, _hText1];
+_text1 ctrlcommit 0;
+_buttonSpoiler ctrlSetFade 1;
+_buttonSpoiler ctrlCommit 0;
+_buttonSpoiler ctrlEnable false;
+_textSpoiler ctrlSetFade 1;
+_textSpoiler ctrlCommit 0;
+_text2 ctrlSetFade 1;
+_text2 ctrlCommit 0;

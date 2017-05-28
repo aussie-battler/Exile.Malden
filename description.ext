@@ -73,3 +73,4 @@ class CfgFunctions
 #include "config.cpp"
 #include "infiSTAR_AdminMenu.hpp"
 #include "CfgRemoteExec.hpp"
+#include "R3F_LOG\desc_include.h"

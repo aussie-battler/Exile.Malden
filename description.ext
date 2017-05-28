@@ -66,7 +66,10 @@ showHUD[] =
     true,   // HUD Weapon Cursors
     false   // Squad Radar
 };
-
+class CfgFunctions
+{
+	#include "ExAdClient\CfgFunctions.cpp"
+};
 #include "config.cpp"
 #include "infiSTAR_AdminMenu.hpp"
 #include "CfgRemoteExec.hpp"

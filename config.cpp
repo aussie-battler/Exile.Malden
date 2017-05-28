@@ -9,6 +9,27 @@
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
 
+ class CfgXM8
+ {
+ 	extraApps[] = {"ExAd_VG","ExAd_SB"};
+
+ 	class ExAd_VG
+ 	{
+ 		title = "Virtual Garage";
+ 		controlID = 50000;					//IDC:50000 -> 50014
+ 		onLoad = "ExAdClient\XM8\Apps\VG\onLoad.sqf";
+ 		onOpen = "ExAdClient\XM8\Apps\VG\onOpen.sqf";
+ 		onClose = "ExAdClient\XM8\Apps\VG\onClose.sqf";
+ 	};
+	class ExAd_SB
+		{
+			title = "Statsbar Settings";
+			controlID = 50400;					//IDC:50400 -> 50475 || These need to be unique and out of range from each other
+			logo = "exile_assets\texture\ui\xm8_app_settings_ca.paa";
+			onLoad = "ExAdClient\XM8\Apps\SB_Settings\onLoad.sqf";
+		};
+
+ };
 
 class CfgClans
 {
@@ -3239,6 +3260,9 @@ class CfgExileCustomCode
   #include "CfgExileCustomCode.cpp"
   ExileClient_object_player_stats_updateTemperature = "ExileClient_object_player_stats_updateTemperature.sqf";
 	ExileClient_gui_xm8_slide_apps_onOpen = "xm8Apps\ExileClient_gui_xm8_slide_apps_onOpen.sqf";
+	ExileClient_gui_xm8_slide = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_slide.sqf";
+ExileServer_system_territory_database_load = "ExAdClient\VirtualGarage\CustomCode\ExileServer_system_territory_database_load.sqf";
+		ExileClient_gui_xm8_show = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_show.sqf";
 	/*
 		You can overwrite every single file of our code without touching it.
 		To do that, add the function name you want to overwrite plus the
@@ -3969,6 +3993,8 @@ class CfgInteractionMenus
 
 		class Actions
 		{
+
+
 			/*
 			class Manage : ExileAbstractAction
 			{

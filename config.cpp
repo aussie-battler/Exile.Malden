@@ -3237,6 +3237,8 @@ class CfgExileArsenal
 class CfgExileCustomCode
 {
   #include "CfgExileCustomCode.cpp"
+  ExileClient_object_player_stats_updateTemperature = "ExileClient_object_player_stats_updateTemperature.sqf";
+	ExileClient_gui_xm8_slide_apps_onOpen = "xm8Apps\ExileClient_gui_xm8_slide_apps_onOpen.sqf";
 	/*
 		You can overwrite every single file of our code without touching it.
 		To do that, add the function name you want to overwrite plus the
